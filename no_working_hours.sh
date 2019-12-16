@@ -1,6 +1,6 @@
 #!/bin/sh
 
-TIME="${1:-$( date +%s )}"	# e.g. unixtime or year or '-1'
+TIME="${1:-$( date +%s )}"	# e.g. unixtime or year or 'help' or e.g. '-1' (invalid number)
 
 usage()
 {
@@ -18,7 +18,10 @@ working_hours are:
 EOF
 }
 
-if   [ ${#TIME} -eq 4 ]; then		# for testing a specific year each day at 9 o'clock
+if   [ "$TIME" = 'help' ]; then
+	usage
+	exit 1
+elif [ ${#TIME} -eq 4 ]; then		# for testing a specific year each day at 9 o'clock
 	YEAR="$TIME"
 	UNIX_START="$( LC_ALL=C date +%s -d "$YEAR-01-01" )"
 	UNIX_START="$(( UNIX_START + (9*3600) ))"	# at 9:00

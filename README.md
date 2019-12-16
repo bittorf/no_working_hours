@@ -1,7 +1,8 @@
 why
 ===
 
-I needed an easy way to check, if a given unix timestamp falls into holiday/vacation/sparetime.
+I needed an easy way to check, if a given unix timestamp falls into holiday/vacation/sparetime.  
+Office hours are defined from 07:00 ... 17:59.  
 
 The POSIX shell-script respect these days:  
 * easterfriday  
