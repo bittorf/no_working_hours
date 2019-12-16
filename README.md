@@ -1,9 +1,11 @@
-=== why ===
+why
+===
 
 I needed an easy way to check, if a given unix timestamp falls into holiday/vacation/sparetime.
 
 
-=== example1 ===
+example1
+========
 
 a cronjob which is only active, if nobody is there
 
@@ -12,7 +14,8 @@ a cronjob which is only active, if nobody is there
 ```
 
 
-=== example2 ===
+example2
+========
 
 a cronjob which is only active, if everybody is working
 
@@ -21,7 +24,8 @@ a cronjob which is only active, if everybody is working
 ```
 
 
-=== example3 ===
+example3
+========
 
 read a csv-file (e.g. a call-log) linewise and output all events which are not during working ours.
 
@@ -36,7 +40,8 @@ done <FILE
 ```
 
 
-=== example 4 ===
+example 4
+=========
 
 debug a given year and show all days. \\
 symbol '!!' means holiday which is not on weekend. \\
