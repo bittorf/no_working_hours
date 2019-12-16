@@ -3,6 +3,13 @@ why
 
 I needed an easy way to check, if a given unix timestamp falls into holiday/vacation/sparetime.
 
+The POSIX shell-script respect these days:  
+* easterfriday  
+* eastermonday  
+* corpuschristi  
+* pentecost_monday  
+* all holidays in germany/thuringia  
+
 
 example1
 ========
