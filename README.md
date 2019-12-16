@@ -43,9 +43,9 @@ done <FILE
 example 4
 =========
 
-debug a given year and show all days. \\
-symbol '!!' means holiday which is not on weekend. \\
-symbol asterisk means weekend.
+debug a given year and show all days.  
+symbol '!!' means holiday which is not on weekend.  
+symbol asterisk means weekend.  
 
 ```
 # no_working_hours.sh 2019 | grep -c WORK
